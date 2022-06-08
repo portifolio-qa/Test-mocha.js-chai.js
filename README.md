@@ -4,9 +4,9 @@
 
 Automação de Teste, utilizando o mocha.js um framework para trabalhar com testes no node. 
 
-**Técnicas de testes:**
+**Técnicas de testes**
 
-    O projeto de teste apresenta as seguintes tecnologias:
+O projeto de teste apresenta as seguintes tecnologias:
 
 * **SO:** Windows 10
 * **Framework de testes:**
@@ -37,14 +37,14 @@ Install Mocha.js;
 
 * Running project
 
-| Action                    | Usage |
-| ------------------------- | ----- |
-| Starting development mode |       |
-| Linting code              |       |
-| Running unit tests        |       |
-|                           |       |
-|                           |       |
-|                           |       |
+| Action             | Usage                  |
+| ------------------ | ---------------------- |
+| Criar Project Node | ***npm init*** |
+| Running unit tests | ***npm test*** |
+|                    |                        |
+|                    |                        |
+|                    |                        |
+|                    |                        |
 
 
 ### Clone the repo
@@ -59,3 +59,15 @@ Rose Dias
 
 
 ## Info Basic mocha.js
+
+* Possui uma sintaxe parecida com o ruby/rspec;
+
+```
+describe('Suite', function(){
+  it('Test', function(){
+    console.log('Teste')
+  
+  });
+  
+});
+```
