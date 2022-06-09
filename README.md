@@ -104,4 +104,4 @@ Fluxo: Sempre que houver um cadastro de uma nova tarefa a api avisa o rabbit que
 
 Nessa arquitetura de microserviços a api somente possui responsabilidade de Get, Post, Put e Delete e notificar o tipo de operação (para o RabbitMQ), o consumer após ler as mensagens toma a ação de enviar o e-mail e comunicar o usuário que está cadastrado na api.
 
-![1654794560945](image/README/1654794560945.png)
+![arquitetura-project.png](image/README/arquitetura-project.png)
