@@ -4,7 +4,8 @@
   "description": "Automação APIs Node",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --exit"
+    "start": "babel-node app.js",
+    "test": "mocha test --require babel-register --exit"
   },
   "keywords": [
     "nodejs",
@@ -19,11 +20,19 @@
   "author": "Rose Dias",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.6",
     "express": "^4.18.1"
+
   },
   "bugs": {
     "url": "https://github.com/portifolio-qa/Test-mocha.js-chai.js/issues"
   },
-  "homepage": "https://github.com/portifolio-qa/Test-mocha.js-chai.js#readme"
+  "homepage": "https://github.com/portifolio-qa/Test-mocha.js-chai.js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0"
+  }
 }

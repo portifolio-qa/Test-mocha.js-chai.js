@@ -12,9 +12,9 @@ O projeto de teste apresenta as seguintes tecnologias:
 | -------------------------------------------------------------- | -------------- |
 | **SO**                                                   | *Windows 10* |
 | **Ferramenta empacotamentoe execução da aplicações** | *docker*     |
-| **Biblioteca de testes de aceitação**                  | *Chaijs*     |
+| **Biblioteca de testes de aceitação**                  | *chaijs*     |
 | **BDD testes de negócio**                               |                |
-| **TDD testes de desenvolvimento**                        | *Mochajs*    |
+| **TDD testes de desenvolvimento**                        | *mochajs*    |
 | **Teste Integração**                                   | *chaiHttp*   |
 | **Page Objects**                                         |                |
 | **Desing Patterns**                                      |                |
@@ -45,16 +45,36 @@ npm install chai --save
 npm install chai-http --save
 ```
 
-* Running project
+* Install Babel Cli
 
-| Action             | Usage                  |
-| ------------------ | ---------------------- |
-| Criar Project Node | ***npm init*** |
-| Running unit tests | ***npm test*** |
-|                    |                        |
-|                    |                        |
-|                    |                        |
-|                    |                        |
+```shell
+npm install babel-cli --save-dev
+```
+
+* Install Babel core
+
+```shell
+npm install babel-core --save-dev
+```
+
+* Install Babel es2015(atualizar versão Javascript)
+
+```shell
+npm install babel-preset-es2015 --save-dev
+```
+
+
+Running project
+
+| Action             | Usage                   |
+| ------------------ | ----------------------- |
+| Criar Project Node | ***npm init***  |
+| Executar Api       | ***npm start*** |
+| Running unit tests | ***npm test***  |
+|                    |                         |
+|                    |                         |
+|                    |                         |
+|                    |                         |
 
 ### Clone the repo
 
