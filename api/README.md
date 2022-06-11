@@ -1,6 +1,6 @@
 # Test-mocha.js-chai.js
 
-**Testes APIs - Microserviço com Node.js**
+**Testes APIs - Microserviços com Node.js**
 
 Automação de Teste, utilizando o mocha.js um framework para trabalhar com testes no node.
 
@@ -8,19 +8,19 @@ Automação de Teste, utilizando o mocha.js um framework para trabalhar com test
 
 O projeto de teste apresenta as seguintes tecnologias:
 
-| Recurso                                                        | Tecnologia                                                 |
-| -------------------------------------------------------------- | ---------------------------------------------------------- |
-| **SO**                                                   | *Windows 10*                                             |
-| **Ferramenta empacotamentoe execução da aplicações** | *Docker*                                                 |
-| **Biblioteca de testes de aceitação**                  | *Chaijs*                                                 |
-| **BDD testes de negócio**                               |                                                            |
-| **TDD testes de desenvolvimento**                        | *Mochajs*                                                |
-| **Desing Patterns**                                      |                                                            |
-| **Page Objects**                                         |                                                            |
-| **Back-end**                                             | *[Treko](https://github.com/qaninja-academy/treko "Back-end")* |
-| **Banco Dados**                                          | *MongoDB*                                                |
-| **Gerenciador BD**                                       | *[Robo Mongo](https://robomongo.org/ "Gerenciador de BD")*     |
-| **Serviço Mensageria(service Brocker)**                 | *RabbitMQ*                                               |
+| Recurso                                                        | Tecnologia                                             |
+| -------------------------------------------------------------- | ------------------------------------------------------ |
+| **SO**                                                   | *Windows 10*                                         |
+| **Ferramenta empacotamentoe execução da aplicações** | *Docker*                                             |
+| **Biblioteca de testes de aceitação**                  | *Chaijs*                                             |
+| **BDD testes de negócio**                               |                                                        |
+| **TDD testes de desenvolvimento**                        | *Mochajs*                                            |
+| **Desing Patterns**                                      |                                                        |
+| **Page Objects**                                         |                                                        |
+| **Back-end**                                             | *[Link API](Link API "Back-end")*                    |
+| **Banco Dados**                                          | *MongoDB*                                            |
+| **Gerenciador BD**                                       | *[Robo Mongo](https://robomongo.org/ "Gerenciador de BD")* |
+| **Serviço Mensageria(service Brocker)**                 | *RabbitMQ*                                           |
 
 ### Installation
 
@@ -60,17 +60,14 @@ docker run --name mongo -d -p 27017:27017 mongo
 docker run -d --hostname rabbitmq --name rabbitmq -p 15672:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-managementan
 ```
 
-
 * Running project
 
-| Action             | Usage                  |
-| ------------------ | ---------------------- |
-| Criar Project Node | ***npm init*** |
-| Rodar API          | ***npm start***      |
-| Running unit tests | ***npm test*** |
-|                    |                        |
-|                    |                        |
-|                    |                        |
+| Action                       | Usage                             |
+| ---------------------------- | --------------------------------- |
+| Criar Project Node           | ***npm init***            |
+| Rodar API                    | ***npm start***           |
+| Running unit tests           | ***npm test***            |
+| Running scripts customizados | ***npm run dropdb_unix*** |
 
 ### Clone the repo
 
@@ -99,7 +96,6 @@ describe('Suite', function(){
 * ***Mocha:*** Framework de teste unitário, pode ser utilizado do lado servidor com o Node ou no lado do cliente, ele apenas monta a estrutura para criar os testes, para realizar validações, verificações, asserções é necessário utilizar um framework ;
 * **Chais.js:** É uma biblioteca de asserções,  dá a possibilidade de utilizar BDD e TDD, lembrando que não é o cucumber, é possivel utilizar com Should, Expect e Assert, ambas são iguais, o que muda é a sintaxe. Nesse projeto utilizarmos  o expect para seguirmos o padrão do rspec e por ser o mais utilizado na comunidade de testes.
 * **ChaiHTTP:** Framework que irá acessar a api, para realizar as requisições nas api, como get, post etc, o node possui diversas ferramentas para testar requisições, aqui poderiamos utilizar o jest também;
-
 
 ## Info Basic RabbitMQ
 
