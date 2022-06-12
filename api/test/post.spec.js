@@ -26,4 +26,17 @@ describe('post', () => {
         })
       })
    })
+
+   context('Dado que não informo o título', () => {
+     let task = {title:'', owner: 'rosedias@teste.com.br, done: false'}
+     it('Então deve retornar status code 400', (done) => {
+      request
+      .post('/task') 
+      .send(task)
+      .end((err, res) => {
+        expect(res).to.has.status(400); //400 = servidor não entendeu a requisição passada        
+       done()
+      })
+    })
+  })
 })
