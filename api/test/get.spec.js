@@ -17,15 +17,15 @@ describe("get", () => {
       let tasks = [
         {
           title: "Cenarios Validos",
-          email: "teste0@teste.com.br",
+          owner: "teste0@teste.com.br",
           done: false,
         },
         {
           title: "Cenarios Invalidos",
-          email: "teste1@teste.com.br",
+          owner: "teste1@teste.com.br",
           done: false,
         },
-        { title: "Cenarios Nulos", email: "teste2@teste.com.br", done: false },
+        { title: "Cenarios Nulos", owner: "teste2@teste.com.br", done: false },
       ];
 
       tasksModel.insertMany(tasks); //insere um array de tarefa no bd
@@ -55,7 +55,7 @@ describe("get", () => {
   context("Dado que realizo a busca por id", () => {
     it("Então deve retornar uma única tarefa", (done) => {
       let tasks = [
-        {title: "Criar cenarios BDD", email: "teste0@teste.com.br",done: false},
+        {title: "Criar cenarios BDD", owner: "teste0@teste.com.br", done: false},
       ];
 
       tasksModel.insertMany(tasks, (err, result) => {

@@ -28,15 +28,30 @@ describe('post', () => {
    })
 
    context('Dado que não informo o título', () => {
-     let task = {title:'', owner: 'rosedias@teste.com.br, done: false'}
+     let task = {title:'', owner: 'rosedias@teste.com.br', done: false}
      it('Então deve retornar status code 400', (done) => {
       request
       .post('/task') 
       .send(task)
       .end((err, res) => {
-        expect(res).to.has.status(400); //400 = servidor não entendeu a requisição passada        
+        expect(res).to.has.status(400); //400 = servidor não entendeu a requisição passada    
+        expect(res.body.errors.title.message).to.eql('Atencao! Titulo é obrigatório')    
        done()
       })
     })
   })
+
+  context('Dado que não informo o Owner', () => {
+    let task = {title:'Nova Tarefa', owner: '', done: false}
+    it('Então deve retornar status code 400', (done) => {
+     request
+     .post('/task') 
+     .send(task)
+     .end((err, res) => {
+       expect(res).to.has.status(400); //400 = servidor não entendeu a requisição passada    
+       expect(res.body.errors.owner.message).to.eql('Atencao! Owner é obrigatório')    
+      done()
+     })
+   })
+ })
 })
