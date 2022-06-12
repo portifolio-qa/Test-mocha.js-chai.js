@@ -19,6 +19,9 @@ describe('post', () => {
         .send(task)
         .end((err, res) => {
           expect(res).to.has.status(200);
+          expect(res.body.data.title).to.be.an('string')
+          expect(res.body.data.owner).to.be.an('string') //validação objetos contrato
+          expect(res.body.data.done).to.be.an('boolean') //validação objetos contrato
          done()
         })
       })
